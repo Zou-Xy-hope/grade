@@ -4,6 +4,8 @@ import AllData from '@/components/AllData'
 import ChartMain from '@/components/ChartMain'
 import Search from '@/components/Search'
 import Model from '@/components/Model'
+import Predict from '@/components/Predict'
+import Upload from '@/components/UploadFile'
 
 Vue.use(Router)
 
@@ -28,6 +30,16 @@ export default new Router({
       path:'/model',
       name:'Model',
       component:Model
+    },
+    {
+      path:'/predict',
+      name:'Predict',
+      component:Predict
+    },
+    {
+      path:'/upload',
+      name:'Upload',
+      component:Upload
     }
   ]
 })
