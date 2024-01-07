@@ -8,9 +8,11 @@ import "./assets/index.css"
 import * as echarts from 'echarts'
 import VueAxios from 'vue-axios'
 import axios from 'axios'
+import port from './setting'
 
 
 Vue.use(VueAxios, axios);
+Vue.prototype.port = 'http://127.0.0.1:5000/';
 Vue.prototype.$echarts = echarts
 
 Vue.config.productionTip = false
